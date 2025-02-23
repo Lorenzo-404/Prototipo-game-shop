@@ -1,6 +1,50 @@
-body { background-color: lightgray;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-    font-family: Arial, sans-serif;
-    
-     margin: left 50px;
+body { 
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Organiza os jogos em uma linha e centraliza */
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os jogos */
+    margin-top: 50px;
+}
+
+/* Cada jogo ocupa um espaço certinho */
+.game {
+    text-align: center;
+    width: 250px;
+}
+
+/* Configuração das imagens dos jogos */
+.botao img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.botao img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
 }
